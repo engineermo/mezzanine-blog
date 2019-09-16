@@ -341,3 +341,11 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
+
+####################
+# CUSTOM SETTINGS #
+####################
+FORMS_USE_HTML5 = True
+COMMENTS_USE_RATINGS = False
+BLOG_USE_FEATURED_IMAGE = True
