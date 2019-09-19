@@ -62,11 +62,11 @@ EXTRA_MODEL_FIELDS = (
         # Dotted path to field.
         "mezzanine.blog.models.BlogPost.retina",
         # Dotted path to field class.
-        "CharField",
+        "ImageField",
         # Positional args for field class.
-        (_("Retina URL"),),
+        (_("Retina Image"),),
         # Keyword args for field class.
-        {"blank": True, "max_length": 150},
+        {"blank": True, "upload_to": "uploads/blog"},
     ),)
 #     # Example of adding a field to *all* of Mezzanine's content types:
 #     (
@@ -349,3 +349,4 @@ else:
 FORMS_USE_HTML5 = True
 COMMENTS_USE_RATINGS = False
 BLOG_USE_FEATURED_IMAGE = True
+TINYMCE_SETUP_JS="tinymce_setup.js"
